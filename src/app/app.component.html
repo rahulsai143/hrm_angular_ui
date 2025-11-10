@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+  <mat-sidenav #sideNav mode="over">
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="d-flex flex-row">
+          <button mat-icon-button (click)="sideNav.open()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="d-flex flex-row-reverse">
+          <button mat-raised-button color="primary">Login</button>
+        </div>
+      </div>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<router-outlet></router-outlet>
